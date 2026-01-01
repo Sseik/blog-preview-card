@@ -1,0 +1,130 @@
+@import "./reset.css";
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@supports (font-variation-settings: "wght" 400) {
+  @font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-variation-settings: "wght" 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+      format("truetype");
+    font-variation-settings: "wght" 400;
+    font-style: italic;
+  }
+}
+
+body {
+  --gray-950: #111;
+  --gray-500: #6b6b6b;
+  --yellow: #f4d04e;
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4d04e;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: 8px 8px 0 black;
+  width: clamp(327px, 384px, 25%);
+}
+
+.illustration {
+  border-radius: 16px;
+  margin: auto;
+  width: 100%;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: center;
+  font-weight: 900;
+}
+
+.avatar {
+  display: inline-block;
+  width: 2rem;
+}
+
+.category {
+  background-color: var(--yellow);
+  padding: 0.25rem 0.75rem;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.category,
+.publishment-date,
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+.illustration,
+.description {
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 2em;
+  font-size: calc(0.0006vw + 0.945rem);
+}
+
+h2 {
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: calc(0.0016vw + 1.3rem);
+}
+
+h2,
+.category,
+.publishment-date,
+.author {
+  color: var(--gray-950);
+}
+
+.description {
+  color: var(--gray-500);
+}
+
+.card h2:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
