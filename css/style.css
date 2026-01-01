@@ -57,7 +57,7 @@ body {
   border-radius: 24px;
   padding: 16px;
   box-shadow: 8px 8px 0 black;
-  width: clamp(327px, 384px, 25%);
+  width: clamp(327px, 384px, 25vw);
 }
 
 .illustration {
@@ -84,6 +84,7 @@ body {
   padding: 0.25rem 0.75rem;
   width: fit-content;
   border-radius: 4px;
+  font-weight: 900;
 }
 
 .category,
