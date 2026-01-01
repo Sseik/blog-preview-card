@@ -128,3 +128,9 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+.screen-reader-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
